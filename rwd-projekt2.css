@@ -45,7 +45,7 @@ button {
 .nav-buttons {
   align-self: center;
   border: none;
-  padding: 0px 20px;
+  padding: 0px 5px;
   background-color: rgba(0, 0, 0, 0);
   color: white;
 }
@@ -55,6 +55,10 @@ button {
 }
 
 @media screen and (min-width: 960px) {
+  .nav-buttons {
+    padding: 0px 20px;
+  }
+
   :hover.contact-but {
     cursor: not-allowed;
   }
@@ -73,7 +77,6 @@ button {
 }
 
 .banner-text {
-  width: 60%;
   padding: 100px 15px;
   font-weight: bolder;
 }
@@ -84,6 +87,7 @@ button {
 @media screen and (min-width: 960px) {
   .banner-text {
     padding: 100px 50px;
+    width: 60%;
   }
 }
 
@@ -187,14 +191,24 @@ img {
 }
 
 .box {
-  width: 180px;
-  height: 180px;
+  width: 420px;
+  height: 420px;
   background-color: #f1f1f1;
   color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #e07a64;
+  position: absolute;
+  top: -10px;
+  left: -10px;
 }
 
 @media screen and (min-width: 960px) {
@@ -210,16 +224,6 @@ img {
     transform: scale(1.05);
     transition: 0.5s ease;
   }
-}
-
-.dot {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: #e07a64;
-  position: absolute;
-  top: -10px;
-  left: -10px;
 }
 
 #footer {
